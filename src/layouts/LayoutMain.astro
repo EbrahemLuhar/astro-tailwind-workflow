@@ -1,5 +1,11 @@
 ---
-import "../styles/global.css"
+import "@styles/global.css";
+
+interface Props {
+	title: string;
+	description: string;
+	keywords: string;
+}
 
 const { title, description, keywords } = Astro.props;
 ---
