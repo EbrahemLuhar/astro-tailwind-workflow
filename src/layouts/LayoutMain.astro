@@ -8,6 +8,8 @@ interface Props {
 }
 
 const { title, description, keywords } = Astro.props;
+
+import Navbar from "@components/Navbar.astro";
 ---
 
 <!DOCTYPE html>
@@ -22,6 +24,8 @@ const { title, description, keywords } = Astro.props;
     <meta name="keywords" content={keywords} />
 	</head>
 	<body>
+		<Navbar></Navbar>
+
     <slot></slot>
 
     <script src="../js/script.js"></script>
